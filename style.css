@@ -1,0 +1,352 @@
+*{
+margin: 0;
+box-sizing: border-box;
+}
+
+
+
+
+body{
+overflow-x: hidden;
+fill: white;
+}
+
+
+.menu{
+height: 100vh;
+width: 90px;
+background-color: white;
+position: absolute;
+}
+
+.fmenu{
+background-color: black;
+height: 80px;
+width: 90px;
+}
+
+.fmenu1{
+height: 5.7vh;
+text-align: center;
+padding-top: 20px;
+position: absolute;
+}
+
+
+.photos{
+margin-left: 90px;
+display: flex;
+width: 95.3%;
+height: 100vh;
+flex-grow: 1;
+}
+
+.camaleão{
+background-image: url(imgs/5.jpg.webp);
+height: 100vh;
+width: 20%;
+background-size: cover;
+background-position: 30%;
+background-repeat: no-repeat;
+background-color: rgba(0, 0, 0, 0.4);
+background-blend-mode: multiply;
+transition: 0.4s;
+}
+
+.camaleão:hover{
+background-image: url(imgs/5.jpg.webp);
+height: 100%;
+width: 70%;
+background-color: transparent;
+transition: 0.4s;
+}
+
+.mulher{
+background-image: url(imgs/1.jpg.webp);
+height: 100vh;
+width: 20%;
+background-size: cover;
+background-position: 30%;
+background-repeat: no-repeat;
+background-color: rgba(0, 0, 0, 0.4);
+background-blend-mode: multiply;
+transition: 0.4s;
+}
+
+.mulher:hover{
+background-image: url(imgs/1.jpg.webp);
+height: 100%;
+width: 70%;
+background-color: transparent;
+transition: 0.4s;
+}
+
+.dog{
+background-image: url(imgs/2.jpg.webp);
+height: 100vh;
+width: 20%;
+background-size: cover;
+background-position: 30%;
+background-repeat: no-repeat;
+background-color: rgba(0, 0, 0, 0.4);
+background-blend-mode: multiply;
+transition: 0.4s;
+}
+
+.dog:hover{
+background-image: url(imgs/2.jpg.webp);
+height: 100%;
+width: 70%;
+background-color: transparent;
+transition: 0.4s;
+}
+
+.mar{
+background-image: url(imgs/3.jpg.webp);
+height: 100vh;
+width: 20%;
+background-size: cover;
+background-position: 30%;
+background-repeat: no-repeat;
+background-color: rgba(0, 0, 0, 0.4);
+background-blend-mode: multiply;
+transition: 0.4s;
+}
+
+.mar:hover{
+background-image: url(imgs/3.jpg.webp);
+height: 100%;
+width: 70%;
+background-color: transparent;
+transition: 0.4s;
+}
+
+.mustang{
+background-image: url(imgs/4.jpg.webp);
+height: 100vh;
+width: 20%;
+background-size: cover;
+background-position: 30%;
+background-repeat: no-repeat;
+background-color: rgba(0, 0, 0, 0.4);
+background-blend-mode: multiply;
+transition: 0.4s;
+}
+
+.mustang:hover{
+background-image: url(imgs/4.jpg.webp);
+height: 100%;
+width: 70%;
+background-color: transparent;
+transition: 0.4s;
+}
+
+
+.txt1{
+position: absolute; left: 7%; top: 72vh;
+opacity: 0;
+transform: translateY(0);
+}
+
+
+.txt2{
+position: absolute; left: 19%; top: 70vh;
+opacity: 0;
+transform: translateY(0);
+}
+
+.txt3{
+position: absolute; left: 32%; top: 70vh;
+opacity: 0;
+transform: translateY(0);
+}
+
+.txt4{
+position: absolute; left: 45%; top: 70vh;
+opacity: 0;
+transform: translateY(0);
+}
+
+.txt5{
+position: absolute; left: 58%; top: 70vh;
+opacity: 0;
+transform: translateY(0);
+}
+
+.camaleão:hover .txt1{
+opacity: 1;
+transition: 1s;
+transform: translateY(20px);
+}
+
+.mulher:hover .txt2{
+opacity: 1;
+transition: 1s;
+transform: translateY(40px);
+}
+
+.dog:hover .txt3{
+opacity: 1;
+transition: 1s;
+transform: translateY(40px);
+}
+
+.mar:hover .txt4{
+opacity: 1;
+transition: 1s;
+transform: translateY(40px);
+}
+
+.mustang:hover .txt5{
+opacity: 1;
+transition: 1s;
+transform: translateY(40px);
+}
+
+
+.people{
+font-family: "Montserrat", sans-serif;
+font-size: 14px;
+background-color: #fff;
+color: #2916e0;
+width: 90px;
+height: 20px;
+padding: 3px 18px;
+border-radius: 3%;
+}
+  
+.autor{
+font-family: "Montserrat", sans-serif;
+display: flex;
+align-items: center;
+border-radius: 50%;
+color: #fff;
+font-size: 25px;
+padding-top: 3%;
+padding-right: 3%;
+}
+
+
+
+.burg{
+color: #fff;
+font-weight: bold;
+font-size: 50px;
+white-space: nowrap;
+font-family: "Montserrat", sans-serif;
+padding-top: 3%;
+}
+
+#dropdown li, #dropdown-click li { background-color: white;
+text-align: center;
+vertical-align: middle;
+width: 25vh;
+top: 0;
+color: black;
+overflow: auto;
+height: 19.34vh;
+display: inline-block;
+font-size: 30px;
+font-weight: 30px;
+}
+
+
+#drop-click { position: absolute;
+width: 30px;
+margin-top: -5.60vh;
+margin-left: 39.2%;
+background-color: transparent;
+color: transparent;
+font-size: 20px;
+}
+
+#dropdown-click{ position: absolute;
+padding: 0;
+opacity: 0;
+color: black;
+transition: 0.4s;
+height: 20vh;
+margin-left: -117%;
+}
+/*checkbox hidden*/
+#check { position: absolute;
+width: 100%;
+height:100%;
+left: 0;
+opacity: 0;
+}
+
+#check:checked~#dropdown-click{opacity: 1;
+z-index: 10;
+}
+
+.home{
+color: #2916e0;
+text-decoration: none;
+}
+
+
+.about{
+color: #b2b2b2;
+text-decoration: none;
+}
+
+.about:hover{
+color: #2916e0;
+transition: 0.6s;
+}
+
+.gallery{
+color: #b2b2b2;
+text-decoration: none;
+}
+
+.gallery:hover{
+color: #2916e0;
+transition: 0.6s;
+}
+
+.blog{
+color: #b2b2b2;
+text-decoration: none;
+}
+
+.blog:hover{
+color: #2916e0;
+transition: 0.6s;
+}
+
+.contact{
+color: #b2b2b2;
+text-decoration: none;
+}
+
+.contact:hover{
+color: #2916e0;
+transition: 0.6s;
+}
+
+.face{
+height: 2vh;
+margin-top: 30vh;
+fill: black;
+}
+
+.tt{
+height: 2vh;
+margin-top: 5vh;
+fill: black;
+}
+
+.in{
+height: 2vh;
+margin-top: 5vh;
+fill: black;
+margin-left: 42px;
+}
+
+.insta{
+height: 2.5vh;
+margin-top: 5vh;
+fill: black;
+}
